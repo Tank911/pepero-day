@@ -524,7 +524,7 @@ function render(){
   $('imgA').style.objectPosition = flip.A ? 'left center' : 'right center';
   $('imgB').style.objectPosition = flip.B ? 'right center' : 'left center';
   updateThoughts('A'); updateThoughts('B');
-  if (k >= 1 && !S.popped){ S.popped = true; msg.textContent = `${$('inA').value || 'A'} <3 ${$('inB').value || 'B'}  Happy Pocky Day!`; hearts(eA); kissSound(); }
+  if (k >= 1 && !S.popped){ S.popped = true; msg.textContent = `${$('inA').value || 'A'} <3 ${$('inB').value || 'B'}  Selamat Hari Pocky!`; hearts(eA); kissSound(); }
   msg.classList.toggle('show', k >= 1);
   fxc.setTransform(dpr, 0, 0, dpr, 0, 0); fxc.clearRect(0, 0, W, H); drawParticles(fxc);
   if (rec) drawFrame(rec.ctx, rec.sc);
