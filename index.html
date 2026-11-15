@@ -1,7 +1,7 @@
 <!-- I just copied this from https://web.archive.org/web/20261111214306id_/https://dnjaqot100.github.io/Pocky-day/ and englishified it sorry if it looks awful blame "dnjaqot100" -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -142,7 +142,7 @@ input[type=range]{width:100%; accent-color:var(--red)}
 <div class="wrap">
   <header>
     <h1>Pocky Day 11.11</h1>
-    <p>One Pocky stick, shared by two until the very end</p>
+    <p>Satu Pocky stick, dibagi oleh dua orang sampai akhir</p>
   </header>
 
   <div class="stage" id="stage">
@@ -157,27 +157,27 @@ input[type=range]{width:100%; accent-color:var(--red)}
   </div>
 
   <div class="bar">
-    <button id="play">▶ Play</button>
-    <button id="reset">↺ Restart</button>
+    <button id="play">▶ Bermain</button>
+    <button id="reset">↺ Mulai ulang</button>
   </div>
   <div class="bar second">
-    <button id="snd" class="sub">🔊 With sound</button>
-    <button id="shot" class="sub">📷 Picture it</button>
-    <button id="vid" class="sub">🎬 Download the video</button>
+    <button id="snd" class="sub">🔊 Dengan suara</button>
+    <button id="shot" class="sub">📷 Bayangkan</button>
+    <button id="vid" class="sub">🎬 Unduh videonya</button>
   </div>
   <div class="vmsg" id="vst" hidden></div>
   <div class="result" id="result" hidden>
     <video id="rv" controls playsinline></video>
     <div class="acts"><a id="rsave" class="dlbtn" href="#" download="Pocky-day.mp4" role="button">⬇ Download</a><button id="rclose" class="ghost">Exit</button></div>
-    <div class="vhint">If the download doesn't work, long-press (or right-click) the video above to save it.</div>
+    <div class="vhint">Jika unduhan tidak berhasil, tekan lama (atau right-click) klik video di atas untuk menyimpannya.</div>
   </div>
 
   <div class="panel">
     <div class="full">
-      <h2>Heart color</h2>
+      <h2>Warna hati</h2>
       <div class="hrow"><b class="hl">A</b><div class="swatches" id="swA"><input type="color" id="hcA" value="#ff5d8f" aria-label="Color A"></div><input type="text" id="kaoA" class="kao" placeholder="Select Kaomoji" maxlength="14" aria-label="Kaomoji A"></div>
       <div class="hrow"><b class="hl">B</b><div class="swatches" id="swB"><input type="color" id="hcB" value="#7aa8ff" aria-label="Color B"></div><input type="text" id="kaoB" class="kao" placeholder="Select Kaomoji" maxlength="14" aria-label="Kaomoji B"></div>
-      <div class="note">Selecting a color will revert the design to the default heart character. (If an image has been uploaded, the image will take over.)</div>
+      <div class="note">Memilih warna akan mengembalikan desain ke karakter hati default. (Jika sebuah gambar telah diunggah, gambar akan mengambil alih.)</div>
     </div>
 
     <div class="full">
@@ -186,38 +186,38 @@ input[type=range]{width:100%; accent-color:var(--red)}
     </div>
 
     <div class="who">
-      <h2>Character A (left)</h2>
+      <h2>Karakter A (kiri)</h2>
       <input type="text" id="inA" value="A" maxlength="12" aria-label="Name">
       <div class="row">
-        <label class="file">Upload character sprite<input type="file" id="fileA" accept="image/*"></label>
+        <label class="file">Unggah sprite karakter<input type="file" id="fileA" accept="image/*"></label>
         <label class="chk"><input type="checkbox" id="flipA"> Flip</label>
       </div>
-      <div class="row"><label for="tiA">Dialogue (3-5 sentences pls)</label><textarea id="tiA"></textarea></div>
+      <div class="row"><label for="tiA">Dialog (3-5 sentences pls)</label><textarea id="tiA"></textarea></div>
     </div>
     <div class="who">
-      <h2>Character B</h2>
+      <h2>Karakter B</h2>
       <input type="text" id="inB" value="B" maxlength="12" aria-label="Name">
       <div class="row">
-        <label class="file">Upload character sprite<input type="file" id="fileB" accept="image/*"></label>
+        <label class="file">Unggah sprite karakter<input type="file" id="fileB" accept="image/*"></label>
         <label class="chk"><input type="checkbox" id="flipB"> Flip</label>
       </div>
-      <div class="row"><label for="tiB">Dialogue (3-5 sentences pls)</label><textarea id="tiB"></textarea></div>
+      <div class="row"><label for="tiB">Dialog (3-5 sentences pls)</label><textarea id="tiB"></textarea></div>
     </div>
 
     <div class="full">
-      <h2>Who eats how many? <span class="val" id="shareVal"></span></h2>
+      <h2>Siapa yang makan berapa banyak? <span class="val" id="shareVal"></span></h2>
       <input type="range" id="share" min="10" max="90" value="50" aria-label="A">
       <div class="ends"><span>B</span><span>A</span></div>
     </div>
 
     <div>
-      <h2>Speed <span class="val" id="spdVal"></span></h2>
+      <h2>Kecepatan <span class="val" id="spdVal"></span></h2>
       <input type="range" id="spd" min="0.5" max="3" step="0.1" value="1" aria-label="Speed">
       <div class="ends"><span>Slower</span><span>Quicker</span></div>
     </div>
 
     <div>
-      <h2>Who has the chocolate part?</h2>
+      <h2>Siapa yang mendapat bagian cokelatnya?</h2>
       <div class="seg">
         <label><input type="radio" name="choc" value="A" checked>A</label>
         <label><input type="radio" name="choc" value="B">B</label>
